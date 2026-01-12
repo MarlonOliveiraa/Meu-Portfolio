@@ -56,7 +56,7 @@ const Footer = () => {
               className="flex-shrink-0"
             >
               <span className="text-foreground font-bold tracking-[0.3em] text-sm uppercase">
-                Lucas Silva
+                Marlon Oliveira
               </span>
               <div className="h-px w-full bg-gradient-to-r from-primary/40 to-transparent mt-2" />
             </motion.div>

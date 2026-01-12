@@ -4,19 +4,19 @@ import { Mail, Linkedin, Github, ArrowUpRight } from 'lucide-react';
 const contactLinks = [
   {
     name: "Email",
-    href: "mailto:contato@exemplo.com",
+    href: "mailto:marlonsantanaoliveira2007@gmail.com",
     icon: Mail,
     label: "contato@exemplo.com"
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/",
+    href: "https://www.linkedin.com/in/marlon-oliveira-234929333",
     icon: Linkedin,
-    label: "/in/seuprofile"
+    label: "/in/marlonoliveira"
   },
   {
     name: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/MarlonOliveiraa",
     icon: Github,
     label: "@seuusername"
   }

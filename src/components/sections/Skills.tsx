@@ -2,12 +2,15 @@ import { motion } from 'framer-motion';
 import { Code, Lightbulb, Users, Target, Zap, Heart } from 'lucide-react';
 
 const hardSkills = [
-  { name: "React / Next.js", level: "Expert" },
-  { name: "TypeScript", level: "Expert" },
-  { name: "Node.js", level: "Advanced" },
-  { name: "PostgreSQL", level: "Advanced" },
-  { name: "Tailwind CSS", level: "Expert" },
-  { name: "Git / CI/CD", level: "Advanced" },
+  { name: "React / Next.js" },
+  { name: "TypeScript" },
+  { name: "Node.js" },
+  { name: "PostgreSQL" },
+  { name: "Tailwind CSS" },
+  { name: "Git / CI/CD" },
+  { name: "Linux" },
+  { name: "PHP" },
+  { name: "MySQL" },
 ];
 
 const softSkills = [
@@ -57,12 +60,9 @@ const Skills = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="flex items-center justify-between py-3 border-b border-border/50"
+                  className="flex items-center justify-start py-3 border-b border-border/50"
                 >
                   <span className="text-foreground font-medium">{skill.name}</span>
-                  <span className="text-primary text-sm font-medium px-3 py-1 bg-primary/10 rounded-full">
-                    {skill.level}
-                  </span>
                 </motion.div>
               ))}
             </div>

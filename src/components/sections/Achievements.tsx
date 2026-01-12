@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 
-import workspaceImg from '@/assets/achievements/workspace.jpg';
-import conferenceImg from '@/assets/achievements/conference.jpg';
-import codingImg from '@/assets/achievements/coding.jpg';
-import teamImg from '@/assets/achievements/team.jpg';
+import hackathon1Img from '@/assets/achievements/hackathon-senac.jpg';
+import hackathon2Img from '@/assets/achievements/hackathon-sindsuper.jpg';
+import hackathon3Img from '@/assets/achievements/hackathon-voucher.jpg';
 
 interface Achievement {
   number: string;
@@ -14,28 +13,22 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
-    number: "+50",
-    label: "Projetos",
-    description: "Entregues com excelência",
-    image: workspaceImg
+    number: "2º",
+    label: "Hackathon Senac Decola",
+    description: "Solução inovadora em tecnologia e saúde com meu time GenMek",
+    image: hackathon1Img
   },
   {
-    number: "+4",
-    label: "Anos",
-    description: "De experiência focada",
-    image: conferenceImg
+    number: "3º",
+    label: "Missão Sindsuper",
+    description: "Sistema de gestão inteligente de escalas para supermercados",
+    image: hackathon2Img
   },
   {
-    number: "+10k",
-    label: "Usuários",
-    description: "Impactados diretamente",
-    image: codingImg
-  },
-  {
-    number: "100%",
-    label: "Compromisso",
-    description: "Com qualidade e resultado",
-    image: teamImg
+    number: "1º",
+    label: "Hackathon Voucher Desenvolvedor",
+    description: "Sistema de gestão de finanças para pequenos empreendedores",
+    image: hackathon3Img
   }
 ];
 
@@ -58,7 +51,7 @@ const Achievements = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.label}
@@ -68,20 +61,16 @@ const Achievements = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-lg aspect-[4/5]"
             >
-              {/* Background Image */}
               <img 
                 src={achievement.image} 
                 alt={achievement.label}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               
-              {/* Dark overlay for consistency */}
               <div className="absolute inset-0 bg-background/70 group-hover:bg-background/60 transition-colors duration-300" />
               
-              {/* Subtle blue accent line at top */}
               <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
-              {/* Content */}
               <div className="relative h-full flex flex-col items-center justify-center p-4 text-center">
                 <span className="block text-3xl lg:text-4xl xl:text-5xl font-bold text-primary glow-text-subtle mb-2">
                   {achievement.number}
@@ -94,7 +83,6 @@ const Achievements = () => {
                 </span>
               </div>
 
-              {/* Glow effect on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none" />
             </motion.div>
           ))}

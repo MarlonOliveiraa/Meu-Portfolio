@@ -2,38 +2,33 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-mot
 import { useRef, useState } from 'react';
 
 interface TimelineItem {
-  year: string;
+  period: string;
   title: string;
   description: string;
+  companyUrl?: string;
 }
 
 const timelineData: TimelineItem[] = [
   {
-    year: "2020",
-    title: "Início da Jornada",
-    description: "Primeiros passos em desenvolvimento web. Descobri que código é uma forma de expressão criativa."
+    period: "Mar 2024 – Jan 2024",
+    title: "Senac Hub Academy",
+    description: "Formação em análise e desenvolvimento de sistemas, com foco em lógica, estruturação de soluções, boas práticas de código e resolução de problemas orientada ao negócio.",
+    companyUrl: "https://www.ms.senac.br"
   },
   {
-    year: "2021",
-    title: "Especialização em Frontend",
-    description: "Aprofundamento em React, TypeScript e design systems. Cada projeto uma oportunidade de evolução."
+    period: "Dez 2024 – Jun 2025",
+    title: "NextMed Tecnologia",
+    description: "Atuação no desenvolvimento e manutenção de interfaces para sistemas de gestão médica, com foco em usabilidade, desempenho e integração com serviços internos.",
+    companyUrl: "https://nextmed.com.br"
   },
   {
-    year: "2022",
-    title: "Projetos de Impacto",
-    description: "Desenvolvimento de aplicações que tocaram milhares de usuários. Foco em performance e experiência."
-  },
-  {
-    year: "2023",
-    title: "Liderança Técnica",
-    description: "Mentoria de desenvolvedores e definição de arquiteturas escaláveis para startups em crescimento."
-  },
-  {
-    year: "2024",
-    title: "Visão Expandida",
-    description: "Integração de IA e automação em projetos. Construindo o futuro com responsabilidade e propósito."
+    period: "Ago 2025 – Atual",
+    title: "Baikal Security",
+    description: "Desenvolvedor fullstack, criando soluções robustas e escaláveis para sistemas de segurança.",
+    companyUrl: "https://baikalsec.com"
   }
 ];
+
 
 const TimelineItemComponent = ({ 
   item, 
@@ -68,12 +63,24 @@ const TimelineItemComponent = ({
       />
       
       {/* Year badge */}
-      <span className={`inline-block text-sm font-semibold tracking-wider mb-2 transition-colors duration-500 ${
-        isActive ? 'text-primary glow-text-subtle' : 'text-primary/60'
-      }`}>
-        {item.year}
-      </span>
-      
+      <a
+        href={item.companyUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-block text-sm font-semibold tracking-wider mb-2
+          underline underline-offset-4
+          transition-colors duration-300
+          ${
+            isActive
+              ? 'text-primary decoration-primary'
+              : 'text-primary/60 decoration-primary/40 hover:text-primary hover:decoration-primary'
+          }
+        `}
+      >
+        {item.period}
+      </a>
+
+
       {/* Content */}
       <h3 className={`text-xl font-semibold mb-2 transition-colors duration-500 ${
         isActive ? 'text-foreground' : 'text-foreground/70'
@@ -139,7 +146,7 @@ const Timeline = () => {
           <div className="space-y-16">
             {timelineData.map((item, index) => (
               <TimelineItemComponent
-                key={item.year}
+                key={item.period}
                 item={item}
                 index={index}
                 isActive={index === activeIndex}

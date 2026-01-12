@@ -3,7 +3,7 @@ import profilePhoto from '@/assets/profile-photo.jpeg';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 lg:px-16 py-20">
+    <section id="sobre" className="min-h-screen flex items-center justify-center px-6 lg:px-16 py-20">
       <div className="max-w-6xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Intro Text */}
@@ -76,7 +76,7 @@ const Hero = () => {
                 <div className="absolute inset-0 border border-primary/10" />
                 <img 
                   src={profilePhoto} 
-                  alt="Lucas Silva" 
+                  alt="Marlon Oliveira" 
                   className="w-full h-full object-cover grayscale-[20%] contrast-[1.05] brightness-[0.95]"
                 />
                 {/* Corner accents */}
@@ -90,11 +90,11 @@ const Hero = () => {
             {/* Name */}
             <div className="text-right">
               <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
-                <span className="block text-foreground">LUCAS</span>
-                <span className="block text-primary glow-text mt-2">SILVA</span>
+                <span className="block text-foreground">MARLON</span>
+                <span className="block text-primary glow-text mt-2">OLIVEIRA</span>
               </h1>
               <p className="text-muted-foreground text-sm font-medium tracking-[0.3em] mt-4 uppercase">
-                Developer & Designer
+                Developer
               </p>
             </div>
           </motion.div>
