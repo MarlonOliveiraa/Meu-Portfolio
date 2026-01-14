@@ -11,6 +11,8 @@ const hardSkills = [
   { name: "Linux" },
   { name: "PHP" },
   { name: "MySQL" },
+  { name: "Docker" },
+  { name: "Ruby on Rails" },
 ];
 
 const softSkills = [

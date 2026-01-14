@@ -112,7 +112,7 @@ const Footer = () => {
                   <Github className="w-4 h-4 group-hover:drop-shadow-[0_0_6px_hsl(var(--primary))]" />
                 </a>
                 <a 
-                  href="mailto:contato@lucassilva.dev" 
+                  href="mailto:marlonsantanaoliveira2007@gmail.com" 
                   className="text-muted-foreground/60 hover:text-primary transition-colors duration-300 group"
                 >
                   <Mail className="w-4 h-4 group-hover:drop-shadow-[0_0_6px_hsl(var(--primary))]" />
