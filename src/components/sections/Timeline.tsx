@@ -22,7 +22,7 @@ const timelineData: TimelineItem[] = [
     companyUrl: "https://nextmed.com.br"
   },
   {
-    period: "Ago 2025 – Atual",
+    period: "Ago 2025 – Jan 2026",
     title: "Baikal Security",
     description: "Desenvolvedor fullstack, criando soluções robustas e escaláveis para sistemas de segurança.",
     companyUrl: "https://baikalsec.com"
