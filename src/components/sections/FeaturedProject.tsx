@@ -3,7 +3,6 @@ import { useRef, useState } from 'react';
 
 import saasDashboard from '@/assets/projects/inicial-bovfort.png';
 import analytics from '@/assets/projects/categorias-bovfort.png';
-import ecommerce from '@/assets/projects/rebanho-bovfort.png';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 
@@ -11,7 +10,7 @@ const FeaturedProject = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [activeImage, setActiveImage] = useState(0);
 
-  const images = [saasDashboard, analytics, ecommerce];
+  const images = [saasDashboard, analytics];
 
   const prevImage = () => {
     setActiveImage((prev) =>
