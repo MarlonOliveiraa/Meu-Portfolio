@@ -35,28 +35,46 @@ const Hero = () => {
             
             {/* Subtle CTA */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="mt-10"
-            >
-              <a 
-                href="#trajetoria" 
-                className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300 group"
-              >
-                <span className="text-sm font-medium tracking-widest uppercase">
-                  Conhecer trajetória
-                </span>
-                <svg 
-                  className="w-4 h-4 transform group-hover:translate-y-1 transition-transform duration-300" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </a>
-            </motion.div>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.5, duration: 0.6 }}
+  className="mt-10"
+>
+  <button
+    type="button"
+    onClick={() => {
+      const section = document.getElementById("trajetoria");
+      if (!section) return;
+
+      const yOffset = -80; // ajuste se tiver header fixo
+      const y =
+        section.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }}
+    className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300 group"
+  >
+    <span className="text-sm font-medium tracking-widest uppercase">
+      Conhecer trajetória
+    </span>
+    <svg
+      className="w-4 h-4 transform group-hover:translate-y-1 transition-transform duration-300"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+      />
+    </svg>
+  </button>
+</motion.div>
+
           </motion.div>
 
           {/* Right - Name & Photo */}

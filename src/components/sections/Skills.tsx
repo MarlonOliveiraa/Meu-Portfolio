@@ -3,24 +3,47 @@ import { Code, Lightbulb, Users, Target, Zap, Heart } from 'lucide-react';
 
 const hardSkills = [
   { name: "React / Next.js" },
-  { name: "TypeScript" },
-  { name: "Node.js" },
-  { name: "PostgreSQL" },
+  { name: "Angular" },
   { name: "Tailwind CSS" },
+  { name: "TypeScript" },
+  { name: "Ruby on Rails" },
+  { name: "PHP" },
+  { name: "Node.js" },
   { name: "Git / CI/CD" },
   { name: "Linux" },
-  { name: "PHP" },
   { name: "MySQL" },
   { name: "Docker" },
-  { name: "Ruby on Rails" },
+  { name: "PostgreSQL" },
 ];
 
 const softSkills = [
-  { name: "Comunicação Clara", icon: Users, description: "Traduzir complexidade em simplicidade" },
-  { name: "Pensamento Crítico", icon: Lightbulb, description: "Questionar antes de executar" },
-  { name: "Foco em Resultado", icon: Target, description: "Entregar valor, não apenas código" },
-  { name: "Adaptabilidade", icon: Zap, description: "Aprender rápido, evoluir sempre" },
+  {
+    name: "Comunicação Clara",
+    icon: Users,
+    description: "Traduzir complexidade técnica em soluções compreensíveis para o time e stakeholders"
+  },
+  {
+    name: "Pensamento Crítico",
+    icon: Lightbulb,
+    description: "Questionar requisitos, decisões e soluções antes da execução"
+  },
+  {
+    name: "Metodologias Ágeis (Scrum)",
+    icon: Target,
+    description: "Atuação em times ágeis com foco em entregas iterativas, cerimônias e melhoria contínua"
+  },
+  {
+    name: "Foco em Resultado",
+    icon: Target,
+    description: "Entregar valor real ao usuário, não apenas funcionalidades"
+  },
+  {
+    name: "Adaptabilidade",
+    icon: Zap,
+    description: "Aprender rápido, lidar bem com mudanças e novos contextos"
+  }
 ];
+
 
 const Skills = () => {
   return (

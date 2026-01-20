@@ -13,6 +13,12 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
+    number: "1º",
+    label: "Hackathon Voucher Desenvolvedor",
+    description: "Sistema de gestão de finanças para pequenos empreendedores",
+    image: hackathon3Img
+  },
+  {
     number: "2º",
     label: "Hackathon Senac Decola",
     description: "Solução inovadora em tecnologia e saúde com meu time GenMek",
@@ -23,12 +29,6 @@ const achievements: Achievement[] = [
     label: "Missão Sindsuper",
     description: "Sistema de gestão inteligente de escalas para supermercados",
     image: hackathon2Img
-  },
-  {
-    number: "1º",
-    label: "Hackathon Voucher Desenvolvedor",
-    description: "Sistema de gestão de finanças para pequenos empreendedores",
-    image: hackathon3Img
   }
 ];
 

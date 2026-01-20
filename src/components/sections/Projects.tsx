@@ -20,57 +20,61 @@ import flowManagerImg from '@/assets/projects/flowmanager.png';
   const projects: Project[] = [
   {
     title: "Landing Page – Baikal",
-    description: "Landing page desenvolvida para conversão de leads e ativação de trial do sistema da Baikal. Atuei no backend em Ruby on Rails, responsável pelo fluxo de cadastro, validação dos dados e persistência das informações dos usuários.",
+    description:
+      "Landing page desenvolvida com foco em conversão de leads e ativação de trial do sistema Baikal. Atuei no backend em Ruby on Rails, implementando o fluxo de cadastro, validação dos dados e persistência das informações, além da integração com o Zoho CRM.",
     technologies: ["React", "Ruby on Rails", "API REST", "Zoho CRM"],
     role: "Backend Developer",
     images: [saasDashboard, mobileApp, ecommerce]
   },
   {
     title: "Fila Zero",
-    description: "Sistema de gestão de filas onde o usuário pode pegar uma senha online, agilizando o atendimento e reduzindo filas físicas.",
-    technologies: ["React Native", "Firebase", "Node.js", "API REST"],
+    description:
+      "Sistema de gestão de filas que permite ao usuário retirar senhas online, otimizando o atendimento e reduzindo filas físicas em estabelecimentos.",
+    technologies: ["React Native", "PHP", "MySQL"],
     role: "Full Stack Developer",
     images: [filaZeroImg]
   },
   {
     title: "Veccelio - Hospital São Julião",
-    description: "Sistema interno para gestão de processos hospitalares, desenvolvido para melhorar fluxo de atendimento e registro de pacientes.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Express"],
-    role: "Full Stack Developer",
+    description:
+      "Protótipo de sistema interno para gestão de processos hospitalares, desenvolvido no Figma com foco em melhorar o fluxo de atendimento e o registro de pacientes.",
+    technologies: ["Figma", "Prototype"],
+    role: "UX/UI Designer",
     images: [veccelioImg]
   },
   {
     title: "FlowManager",
-    description: "Sistema de gestão de pequenos negócios, ajudando empreendedores a organizar vendas, finanças e tarefas diárias de forma eficiente.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+    description:
+      "Sistema de gestão para pequenos negócios, criado para auxiliar no controle de vendas, finanças e tarefas operacionais de forma centralizada.",
+    technologies: ["React", "TypeScript", "PHP", "MySQL"],
     role: "Full Stack Developer",
     images: [flowManagerImg]
   }
 ];
 
-    const ExpandableDescription = ({ text }: { text: string }) => {
-    const [expanded, setExpanded] = useState(false);
+  const ExpandableDescription = ({ text }: { text: string }) => {
+  const [expanded, setExpanded] = useState(false);
 
-    const previewLength = 110;
-    const isLong = text.length > previewLength;
+  const previewLength = 110;
+  const isLong = text.length > previewLength;
 
-    return (
-      <p className="text-muted-foreground font-light text-sm leading-relaxed mb-4">
-        {expanded || !isLong ? text : `${text.slice(0, previewLength)}... `}
-        {isLong && (
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setExpanded(!expanded);
-            }}
-            className="ml-1 text-primary font-medium hover:underline transition-colors"
-          >
-            {expanded ? 'Ler menos' : 'Ler mais'}
-          </button>
-        )}
-      </p>
-    );
-  };
+  return (
+    <p className="text-muted-foreground font-light text-sm leading-relaxed mb-4">
+      {expanded || !isLong ? text : `${text.slice(0, previewLength)}... `}
+      {isLong && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setExpanded(!expanded);
+          }}
+          className="ml-1 text-primary font-medium hover:underline transition-colors"
+        >
+          {expanded ? 'Ler menos' : 'Ler mais'}
+        </button>
+      )}
+    </p>
+  );
+};
 
   const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
     const [activeImage, setActiveImage] = useState(0);
