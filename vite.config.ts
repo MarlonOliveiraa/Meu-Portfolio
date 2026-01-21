@@ -4,10 +4,10 @@ import path from "path"
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // <<- chave para resolver MIME/paths
+  base: "./", // chave para branch main
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"), // se você usa @ para imports
+      "@": path.resolve(__dirname, "src"),
     },
   },
 })
