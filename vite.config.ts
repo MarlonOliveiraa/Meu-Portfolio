@@ -4,7 +4,7 @@ import path from "path"
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Meu-Portfolio/",
+  base: "./", // importante! relativo à raiz
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
