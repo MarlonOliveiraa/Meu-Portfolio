@@ -23,7 +23,7 @@ import flowManagerImg from '@/assets/projects/flowmanager.png';
     description:
       "Landing page desenvolvida com foco em conversão de leads e ativação de trial do sistema Baikal. Atuei no backend em Ruby on Rails, implementando o fluxo de cadastro, validação dos dados e persistência das informações, além da integração com o Zoho CRM.",
     technologies: ["React", "Ruby on Rails", "API REST", "Zoho CRM"],
-    role: "Backend Developer",
+    role: "Desenvolvedor Backend",
     images: [saasDashboard, mobileApp, ecommerce]
   },
   {
@@ -31,7 +31,7 @@ import flowManagerImg from '@/assets/projects/flowmanager.png';
     description:
       "Sistema de gestão de filas que permite ao usuário retirar senhas online, otimizando o atendimento e reduzindo filas físicas em estabelecimentos.",
     technologies: ["React Native", "PHP", "MySQL"],
-    role: "Full Stack Developer",
+    role: "Desenvolvedor Full Stack",
     images: [filaZeroImg]
   },
   {
@@ -47,7 +47,7 @@ import flowManagerImg from '@/assets/projects/flowmanager.png';
     description:
       "Sistema de gestão para pequenos negócios, criado para auxiliar no controle de vendas, finanças e tarefas operacionais de forma centralizada.",
     technologies: ["React", "TypeScript", "PHP", "MySQL"],
-    role: "Full Stack Developer",
+    role: "Desenvolvedor Full Stack",
     images: [flowManagerImg]
   }
 ];

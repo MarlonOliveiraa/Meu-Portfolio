@@ -29,12 +29,13 @@ const Index = () => {
       
       {/* Impact Statement - Narrative break */}
       <ImpactStatement 
-        statement="Não construo apenas software. Construo soluções que transformam a forma como pessoas trabalham."
-        highlight="transformam"
-      />
+          statement="Software bonito não basta. Meu foco é criar soluções que resolvem problemas e entram na rotina das pessoas."
+          highlight="resolvem"
+        />
+
       
       <NarrativeTransition 
-        text="O caminho de um desenvolvedor não é linear — é uma sequência de escolhas intencionais que moldam quem você se torna."
+        text="A evolução como desenvolvedor acontece resolvendo problemas reais, um projeto de cada vez."
       />
       
       <Timeline />
@@ -42,7 +43,7 @@ const Index = () => {
       <SectionDivider variant="glow" />
       
       <NarrativeTransition 
-        text="Cada número representa não apenas quantidade, mas compromisso com excelência em cada entrega."
+        text="Cada projeto e cada colocação representam problemas reais resolvidos em pouco tempo, sob pressão e com trabalho em equipe."
       />
       
       <Achievements />

@@ -1,20 +1,36 @@
 import { motion } from 'framer-motion';
-import { Code, Lightbulb, Users, Target, Zap, Heart } from 'lucide-react';
+import { Code, Lightbulb, Users, Target, Zap, Heart, TrendingUp, RefreshCcw } from 'lucide-react';
+import {
+  SiReact,
+  SiNextdotjs,
+  SiAngular,
+  SiTailwindcss,
+  SiTypescript,
+  SiRubyonrails,
+  SiPhp,
+  SiNodedotjs,
+  SiPostgresql,
+  SiMysql,
+  SiGit,
+  SiLinux,
+  SiDocker
+} from 'react-icons/si';
 
 const hardSkills = [
-  { name: "React / Next.js" },
-  { name: "Angular" },
-  { name: "Tailwind CSS" },
-  { name: "TypeScript" },
-  { name: "Ruby on Rails" },
-  { name: "PHP" },
-  { name: "Node.js" },
-  { name: "Git / CI/CD" },
-  { name: "Linux" },
-  { name: "MySQL" },
-  { name: "Docker" },
-  { name: "PostgreSQL" },
+  { name: "React / Next.js", icon: SiReact },
+  { name: "Angular", icon: SiAngular },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Ruby on Rails", icon: SiRubyonrails },
+  { name: "PHP", icon: SiPhp },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "MySQL", icon: SiMysql },
+  { name: "Git / CI/CD", icon: SiGit },
+  { name: "Linux", icon: SiLinux },
+  { name: "Docker", icon: SiDocker }
 ];
+
 
 const softSkills = [
   {
@@ -29,12 +45,12 @@ const softSkills = [
   },
   {
     name: "Metodologias Ágeis (Scrum)",
-    icon: Target,
+    icon: RefreshCcw,
     description: "Atuação em times ágeis com foco em entregas iterativas, cerimônias e melhoria contínua"
   },
   {
     name: "Foco em Resultado",
-    icon: Target,
+    icon: TrendingUp,
     description: "Entregar valor real ao usuário, não apenas funcionalidades"
   },
   {
@@ -87,7 +103,10 @@ const Skills = () => {
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="flex items-center justify-start py-3 border-b border-border/50"
                 >
-                  <span className="text-foreground font-medium">{skill.name}</span>
+                  <div className="flex items-center gap-3">
+                    <skill.icon className="w-5 h-5 text-muted-foreground" />
+                    <span className="text-foreground font-medium">{skill.name}</span>
+                  </div>
                 </motion.div>
               ))}
             </div>

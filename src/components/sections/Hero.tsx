@@ -13,12 +13,9 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="order-2 lg:order-1"
           >
-            <p className="text-muted-foreground text-lg mb-6 font-light tracking-wide">
-              Olá, eu sou
-            </p>
             <div className="space-y-6">
               <p className="text-foreground text-xl lg:text-2xl font-light leading-relaxed">
-                Desenvolvedor focado em criar experiências digitais que combinam{' '}
+                Desenvolvo sistemas digitais com foco em clareza, eficiência e uso real. Código bem feito, design funcional e decisões que fazem sentido no negócio.{' '}
                 <span className="text-primary glow-text-subtle font-medium">
                   design intencional
                 </span>{' '}
@@ -28,8 +25,8 @@ const Hero = () => {
                 </span>.
               </p>
               <p className="text-muted-foreground text-lg font-light leading-relaxed">
-                Acredito que tecnologia deve ser invisível — o que importa é o impacto 
-                que ela gera. Cada linha de código que escrevo tem um propósito claro.
+                Para mim, tecnologia só é boa quando não atrapalha.
+                Quando o usuário consegue fazer o que precisa, sem pensar no sistema.
               </p>
             </div>
             
@@ -112,7 +109,7 @@ const Hero = () => {
                 <span className="block text-primary glow-text mt-2">OLIVEIRA</span>
               </h1>
               <p className="text-muted-foreground text-sm font-medium tracking-[0.3em] mt-4 uppercase">
-                Developer
+                Desenvolvedor
               </p>
             </div>
           </motion.div>

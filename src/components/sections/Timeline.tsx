@@ -16,6 +16,12 @@ const timelineData: TimelineItem[] = [
     companyUrl: "https://www.ms.senac.br"
   },
   {
+    period: "Out 2024 – Atual",
+    title: "Desenvolvedor Autônomo",
+    description: "Atuação como desenvolvedor autônomo em projetos sob demanda, participando de todas as etapas, da definição do problema à entrega da solução, com foco em sistemas funcionais, integrações e necessidades reais do negócio.",
+    companyUrl: "https://marlonoliveira.com.br"
+  },
+  {
     period: "Dez 2024 – Jun 2025",
     title: "NextMed Tecnologia",
     description: "Atuação no desenvolvimento e manutenção de interfaces para sistemas de gestão médica, com foco em usabilidade, desempenho e integração com serviços internos.",
@@ -126,7 +132,7 @@ const Timeline = () => {
             Trajetória
           </h2>
           <p className="text-muted-foreground font-light">
-            Uma linha do tempo de aprendizado contínuo e crescimento intencional.
+            Minha trajetória não foi linear, foi construída resolvendo problemas reais, aprendendo rápido e ajustando o caminho conforme os desafios apareciam.
           </p>
         </motion.div>
 

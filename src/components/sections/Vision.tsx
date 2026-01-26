@@ -28,14 +28,12 @@ const Vision = () => {
             </p>
             
             <p className="text-muted-foreground text-lg font-light leading-relaxed">
-              Minha missão é criar soluções que resolvam problemas reais, 
-              com simplicidade elegante e impacto duradouro. Cada projeto 
-              é uma oportunidade de construir algo que importa — algo que 
-              as pessoas lembrem não pelo código, mas pela experiência.
+              Gosto de construir sistemas simples, bem pensados e fáceis de manter.
+              Soluções que resolvem problemas reais hoje — e continuam funcionando amanhã.
             </p>
 
             <p className="text-primary glow-text-subtle text-lg font-medium mt-8">
-              Construir com propósito. Entregar com excelência.
+              Resolver bem o problema certo é mais importante do que usar a tecnologia da moda.
             </p>
           </div>
         </div>

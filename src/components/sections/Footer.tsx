@@ -77,12 +77,12 @@ const Footer = () => {
               />
               
               <p className="relative text-muted-foreground/90 text-sm lg:text-base tracking-wide">
-                <span className="text-foreground font-semibold">Penso como negócio.</span>
+                <span className="text-foreground font-semibold">Penso no problema como negócio.</span>
                 {' '}
-                <span className="text-muted-foreground/70">Executo como engenheiro.</span>
+                <span className="text-muted-foreground/70"> Executo a solução como engenheiro.</span>
               </p>
               <p className="relative text-primary/60 text-xs lg:text-sm mt-2 font-light tracking-wider">
-                Código é ferramenta — produto é o objetivo.
+                Código é ferramenta, produto é o objetivo.
               </p>
             </motion.div>
 
